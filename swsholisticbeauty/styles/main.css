@@ -17,7 +17,7 @@ img{max-width:100%;height:auto}
 .button,.workshop-img,.workshop-caption:after,.navbar-right li a,.logo,.icon-bar,.social-group a{-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out}
 .page-btn{text-align:center}
 .button{display:inline-block;position:relative;color: inherit}
-.btn-hollow{border: 1px solid #f0e7cf;font-size: 18px;padding: 10px 20px;margin-top: 22px}
+.btn-hollow{border: 1px solid #f0e7cf;font-size: 18px;padding: 10px 20px;margin-top: 22px;}
 .button:link,.button:visited,.button:hover,.button:active{text-decoration:none;color: inherit;/*background-color: rgba(240, 231, 207, .2)*/}
 
 .wrapper{
@@ -71,7 +71,11 @@ img{max-width:100%;height:auto}
 .workshop-item:hover .btn-hollow:before,.workshop-item:hover .btn-hollow:after{-webkit-transform:scale(1);transform:scale(1);opacity:1}
 .img-product img{max-width:none;margin-top:-4em;margin-left:-10%}
 .bookform-info .workshop-title,.bookform-info .workshop-dis{opacity:1;transform:none;-webkit-transform:none}
-.bookform-info{padding:65px 50px 65px;background-color: #948d6b;width: 45%}
+.bookform-info{
+    padding:65px 50px 65px;
+    /*background-color: #948d6b;*/
+    width: 45%;
+}
 .whitem-note{margin:26px 0}
 .whitem-note li{padding-left:25px;position:relative;margin-bottom:10px}
 .whitem-note h5{font-size:16px;font-weight:700;margin:0}
@@ -79,7 +83,10 @@ img{max-width:100%;height:auto}
 .item-ws-time:after{content:"";display:block;width:12px;height:12px;background:url(../images/icon-clock.png) no-repeat;background-size:100% auto;-webkit-background-size:100% auto;position:absolute;left:0;top:0}
 .item-ws-map:after{content:"";display:block;width:8px;height:12px;background:url(../images/icon-map.png) no-repeat;background-size:100% auto;-webkit-background-size:100% auto;position:absolute;left:2px;top:2px}
 .bfi-photo img{padding:5px;border:1px solid #fff}
-.book-form-con{padding:65px;background-color:#9f9773}
+.book-form-con{
+    padding:65px;
+    /*background-color:#9f9773;*/
+}
 
 /*register*/
 .reg-form{margin-top:35px}
@@ -116,10 +123,10 @@ img{max-width:100%;height:auto}
 /*pop up*/
 .modal{color:#fff;font-family: 'Noto Sans', sans-serif;}
 .modal-lg{width:1020px}
-.modal-content{box-shadow:none;border:none;border-radius:0;background-color: #9f9773}
+.modal-content{box-shadow:none;border:none;border-radius:0;background-color: #BE7C4D}
 .modal-body{padding: 0}
 button.close{color:#fff;position: absolute;z-index: 10;right: 5px;top: 5px;padding: 10px;font-size: 18px;opacity: 1;width: 44px;height: 44px;border-radius: 50%}
-button.close:hover{color: #fff;opacity: 1;background-color: #b2aa86}
+button.close:hover{color: #fff;opacity: 1;background-color: #BE7C4D}
 .modal-backdrop.in{filter:alpha(opacity=88);opacity:.88}
 .popcol {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex}
 
@@ -127,7 +134,7 @@ button.close:hover{color: #fff;opacity: 1;background-color: #b2aa86}
 .mCSB_scrollTools .mCSB_draggerRail{background:#9e9779;width: 8px}
 
 
-#backtotop{position:absolute;right:-15px;top: 0;bottom: 0;width:73px;padding-top: 16px; text-align: center;z-index:29;font-size: 18px;letter-spacing: 1px;background-color: #9f9773; cursor:pointer}
+#backtotop{position:absolute;right:-15px;top: 0;bottom: 0;width:73px;padding-top: 16px; text-align: center;z-index:29;font-size: 18px;letter-spacing: 1px;background-color: #BE7C4D; cursor:pointer}
 #backtotop span{display: block}
 /*#backtotop:hover{animation:updown .8s infinite linear;-webkit-animation:updown .8s infinite linear;-moz-animation:updown .8s infinite linear}*/
 @keyframes updown {
@@ -336,7 +343,10 @@ button.close:hover{color: #fff;opacity: 1;background-color: #b2aa86}
     .modal-content{background-color: #54251b}
     .modal-body{min-height: 100vh}
     button.close:hover{background-color: #5f291d}
-    .bookform-info{background-color: #54251b;padding-top: 50px}
+    .bookform-info{
+        background-color: #54251b;
+        padding-top: 50px;
+    }
     .book-form-con{background-color: #4a1f16}
     .navbar-header{padding: 13px 0 13px 30px;text-align: center}
     .logo,.navbar-default.fixed .logo{width: 80px}
