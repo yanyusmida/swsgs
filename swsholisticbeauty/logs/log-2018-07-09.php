@@ -16,3 +16,27 @@ ERROR - 2018-07-09 12:08:31 --> Query error: You have an error in your SQL synta
 ERROR - 2018-07-09 12:10:42 --> Severity: Notice  --> Undefined property: Ajax::$_sms_logs D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\CodeIgniter\2.1.4\system\core\Model.php 51
 ERROR - 2018-07-09 12:10:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `preorder_id` =  '2'' at line 2
 ERROR - 2018-07-09 13:45:22 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `preorder_id` =  '2'' at line 2
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'result' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 379
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'status' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 379
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'result' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 380
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'error' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 380
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'result' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 381
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'testmode' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 381
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'receivers' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 382
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'id' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 382
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'receivers' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 383
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'value' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 383
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'receivers' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 384
+ERROR - 2018-07-09 18:51:35 --> Severity: Warning  --> Illegal string offset 'messageid' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 384
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'result' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 379
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'status' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 379
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'result' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 380
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'error' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 380
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'result' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 381
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'testmode' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 381
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'receivers' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 382
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'id' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 382
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'receivers' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 383
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'value' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 383
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'receivers' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 384
+ERROR - 2018-07-09 18:58:36 --> Severity: Warning  --> Illegal string offset 'messageid' D:\yanyu\ruanjian\phpstudy\PHPTutorial\WWW\swsholisticbeauty\models\samplings.php 384

@@ -123,15 +123,30 @@ class Ajax extends CI_Controller {
 						//send_message($appid,$appsecret,$receivers,$content)
 						// receivers联系号码
 						// content短信内容
-						$str = '这是一条测试信息，请忽略谢谢';
-						$res = $this->samplings->send_message('2818','25625fa1-2b65-4fd9-9f4a-b226b9299612','+6597903507',$str);
+						$str = 'thisistest.....';
+						// $res = $this->samplings->send_message('2818','25625fa1-2b65-4fd9-9f4a-b226b9299612','+6597903507',$str);
 						
 						if ($res === FALSE) {
 							$result = array("error" => 1, 'msg' => 'sorry,短信发送失败');
 						}else{
-							// string(292) "{"result":{"status":"NOK","error":"Account does not exist or has expired.","testmode":false},"content":{"value":"è¿™æ˜¯ä¸€æ¡æµ‹è¯•ä¿¡æ¯ï¼Œè¯·å¿½ç•¥è°¢è°¢","encoding":null,"chars":0,"parts":0},"receivers":[],"credit":{"balance":0,"required":0}}"
-							var_dump($res);exit();
-							// $result = array("error" => 0, 'msg' => 'Success');
+							// 失败：string(292) "{"result":{"status":"NOK","error":"Account does not exist or has expired.","testmode":false},"content":{"value":"è¿™æ˜¯ä¸€æ¡æµ‹è¯•ä¿¡æ¯ï¼Œè¯·å¿½ç•¥è°¢è°¢","encoding":null,"chars":0,"parts":0},"receivers":[],"credit":{"balance":0,"required":0}}"
+							// 成功
+							// string(256) "{"result":{"status":"OK","error":"","testmode":false},"content":{"value":"thisistest.....","encoding":"GSM 7 bit","chars":15,"parts":1},"receivers":[{"id":"1","value":"6597903507","credits":1,"messageid":"100901194"}],"credit":{"balance":500,"required":1}}"
+							
+							$res = '{"result":{"status":"OK","error":"","testmode":false},"content":{"value":"thisistest.....","encoding":"GSM 7 bit","chars":15,"parts":1},"receivers":[{"id":"1","value":"6597903507","credits":1,"messageid":"100901194"}],"credit":{"balance":500,"required":1}}';
+							$res = json_decode($res,true);
+							// var_dump($res);exit();
+
+							// 成功以后插入数据表
+							// var_dump($res);exit();
+							$ress = $this->samplings->add_phone_later($res);
+							if ($ress) {
+								$result = array("error" => 0, 'msg' => 'Success');
+							}else{
+								$result = array("error" => 1, 'msg' => '数据库后添加错误');
+							}
+							
+							
 						}
 
 					}else{

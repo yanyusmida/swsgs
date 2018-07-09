@@ -12,6 +12,8 @@ class Samplings extends CI_Model {
 	private $_preorder;
 	private $_preorder_users;
 	private $sms_logs;
+	private $sms_later;
+
 	
 
 	public function __construct() {
@@ -22,6 +24,7 @@ class Samplings extends CI_Model {
 		$this->_preorder = $this->db->dbprefix("preorder");
 		$this->_preorder_users = $this->db->dbprefix("preorder_users");
 		$this->sms_logs = $this->db->dbprefix("sms_logs");
+		$this->sms_later = $this->db->dbprefix("sms_later");
 	}
 	
 	//日期是否过期
@@ -368,6 +371,21 @@ class Samplings extends CI_Model {
 		unset($data['check-tc']);
 		unset($data['_']);
 		$result = $this->db->insert("sms_logs", $data);
+		return $result;
+	}
+
+	function add_phone_later($data) {
+		// var_dump($data);exit();
+		$arr = [];
+		$arr['status'] = $data['result']['status'];
+		$arr['error'] = $data['result']['error'];
+		$arr['testmode'] = $data['result']['testmode'];
+		$arr['id'] = $data['receivers']['0']['id'];
+		$arr['value'] = $data['receivers']['0']['value'];
+		$arr['messageid'] = $data['receivers']['0']['messageid'];
+		$t=time();
+		$arr['send_time'] = date("Y-m-d H:i:s",$t);
+		$result = $this->db->insert("sms_later", $arr);
 		return $result;
 	}
 
