@@ -1,0 +1,295 @@
+/* 
+Author: Start Bootstrap - http://startbootstrap.com
+'SB Admin' HTML Template by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* ATTN: This is mobile first CSS - to update 786px and up screen width use the media query near the bottom of the document! */
+
+/* Global Styles */
+
+body {
+  margin-top: 50px;
+}
+
+#mask_pop {
+  background-color: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: none;
+}
+
+#mask_pop img{
+	padding-left: 50%;
+	padding-top: 10%;
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 5px 15px;
+}
+.fa{
+    margin-right: 4px;
+}
+.clear{
+    clear:both;
+}
+.table_noborder .table > tbody > tr > td, .table_noborder .table > tfoot > tr > td{
+    border:none;
+}
+.table_noborder input{
+    margin-right: 4px;
+    display:inline-block;
+}
+.nav-pills > li > a{
+    padding-left: 40px;
+}
+.minh_fix{
+    min-height:420px;
+}
+.mtnag{
+    position: relative;
+    top: -25px;
+}
+.nav-tabs{
+    margin-bottom:25px;
+}
+.button_top{
+    position:relative;
+    z-index:5;
+}
+/* Nav Messages */
+
+.messages-dropdown .dropdown-menu .message-preview .avatar,
+.messages-dropdown .dropdown-menu .message-preview .name,
+.messages-dropdown .dropdown-menu .message-preview .message,
+.messages-dropdown .dropdown-menu .message-preview .time {
+  display: block;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .avatar {
+  float: left;
+  margin-right: 15px;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .name {
+  font-weight: bold;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .message {
+  font-size: 12px;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .time {
+  font-size: 12px;
+}
+
+
+/* Nav Announcements */
+
+.announcement-heading {
+  font-size: 50px;
+  margin: 0;
+}
+
+.announcement-text {
+  margin: 0;
+}
+
+/* Table Headers */
+
+table.tablesorter thead {
+  cursor: pointer;
+}
+
+table.tablesorter thead tr th:hover {
+  background-color: #f5f5f5;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+  display: block;
+  height: 400px;
+}
+
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width:768px) {
+
+  /* Wrappers */
+
+  #wrapper {
+	/*padding-left: 225px;*/
+    padding-left: 200px;
+  }
+
+  #page-wrapper {
+	padding: 15px 25px;
+  }
+
+  /* Side Nav */
+
+  .side-nav {
+	/*margin-left: -225px;
+	left: 225px;
+	width: 225px;*/
+    margin-left: -200px;
+    left:200px;
+    width:200px;
+	position: fixed;
+	top: 50px;
+	height: 100%;
+	border-radius: 0;
+	border: none;
+	background-color: #222222;
+	overflow-y: auto;
+  }
+
+  /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
+
+  .side-nav>li.dropdown>ul.dropdown-menu {
+	position: relative;
+	min-width: 225px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+  }
+
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a {
+	color: #999999;
+	padding: 15px 15px 15px 25px;
+  }
+
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a.active,
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a:focus {
+	color: #fff;
+	background-color: #080808;
+  }
+
+  .side-nav>li>a {
+	/*width: 225px;*/
+    width:200px;
+  }
+
+  .navbar-inverse .navbar-nav>li>a:hover,
+  .navbar-inverse .navbar-nav>li>a:focus {
+	background-color: #080808;
+  }
+
+  /* Nav Messages */
+
+  .messages-dropdown .dropdown-menu {
+	min-width: 300px;
+  }
+
+  .messages-dropdown .dropdown-menu li a {
+	white-space: normal;
+  }
+
+}
+
+.ptn{padding-top:0}
+.ptx{padding-top:3px}
+.pts{padding-top:5px}
+.ptm{padding-top:10px}
+.ptl{padding-top:20px}
+.prn{padding-right:0}
+.prx{padding-right:3px}
+.prs{padding-right:5px}
+.prm{padding-right:10px}
+.prl{padding-right:20px}
+.pbn{padding-bottom:0}
+.pbx{padding-bottom:3px}
+.pbs{padding-bottom:5px}
+.pbm{padding-bottom:10px}
+.pbl{padding-bottom:20px}
+.pln{padding-left:0}
+.plx{padding-left:3px}
+.pls{padding-left:5px}
+.plm{padding-left:10px}
+.pll{padding-left:20px}
+.mtn{margin-top:0}
+.mtx{margin-top:3px}
+.mts{margin-top:5px}
+.mtm{margin-top:10px}
+.mtl{margin-top:20px}
+.mrn{margin-right:0}
+.mrx{margin-right:3px}
+.mrs{margin-right:5px}
+.mrm{margin-right:10px}
+.mrl{margin-right:20px}
+.mbn{margin-bottom:0}
+.mbx{margin-bottom:3px}
+.mbs{margin-bottom:5px}
+.mbm{margin-bottom:10px}
+.mbl{margin-bottom:20px}
+.mln{margin-left:0}
+.mlx{margin-left:3px}
+.mls{margin-left:5px}
+.mlm{margin-left:10px}
+.mll{margin-left:20px}
+
+.aps_tab.breadcrumb > li + li:before{
+    content:"| ";
+}
+.aps_tab .active a{
+    font-weight:bold;
+    color:#333;
+    text-decoration: underline;
+}
+.entry_detail_tb td{
+    padding: 8px;
+}
+.entry_detail_tb .ver_top{
+    vertical-align:top;
+}
+.etr_thum{
+    max-width:80px;
+    max-height:80px;
+}
+.etr_large{
+    max-width:500px;
+    max-height:500px;
+}
+.button_dr_download{
+    margin-left:15%;
+}
+.dr_tab{
+    margin: 50px 0 0;
+}
+.admin_mainform{width:100%;}
+.admin_mainform table{width:90%;margin-left: 3%;}
+.admin_mainform table th, .admin_mainform table td{border-top:0;}
+/*.admin_mainform table .pagination-right{text-align:right;}*/
+
+/*login*/
+.admin_login{width:360px; margin: 0 auto;}
+@media (max-width: 480px){
+    .admin_login{
+        width:90%;
+    }
+}
